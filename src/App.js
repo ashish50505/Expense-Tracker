@@ -19,7 +19,7 @@ function App() {
 
   }
    const DeleteExpense=(id)=>{
-    setexpenses((prev) => prev.filter((item) => item.id != id) )
+    setexpenses((prev) => prev.filter((item) => item.id !== id) )
   }
    const totalExpenses  = expenses.reduce((sum, item) => sum + item.amount, 0)
   return (
